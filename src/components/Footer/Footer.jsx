@@ -5,7 +5,7 @@ import AbleCorp from '../../assets/Able-Corp.jpeg';
 function Footer() {
   return (
     <div className="footer">
-      <div style={{ margin: '20px' }}>
+      <div>
         <img
           src={AbleCorp}
           style={{
@@ -15,7 +15,9 @@ function Footer() {
             borderRadius: '25px',
           }}
         />
-        <h2 style={{ color: 'black' }}>&copy; Able Corporation</h2>
+        <h2 style={{ color: 'black' }}>
+          &copy; Able Corporation {new Date(Date.now()).getFullYear()}
+        </h2>
       </div>
 
       <div
@@ -40,13 +42,19 @@ function Footer() {
         >
           <ul style={{ listStyleType: 'none', padding: 0 }}>
             <li style={{ textAlign: 'left' }}>
-              Joshua Mukisa Kiryowa, IB1 <br /> <b>Founder, CTO</b>
+              Joshua Mukisa Kiryowa, IB1 <br /> <b>Chairman, CTO</b>
             </li>
             <li style={{ textAlign: 'left' }}>
               {/* <br /> */}
               <br />
               Emmanuel Asiimwe, IB1 <br />
               <b>Development Manager</b>
+            </li>
+            <li style={{ textAlign: 'left' }}>
+              {/* <br /> */}
+              <br />
+              Tahsan Samin, IB1 <br />
+              <b>Tech Lead</b>
             </li>
             {/* <li style={{ textAlign: 'left' }}>
               Khush Shah - <b>CEO, Co-Founder</b>
@@ -87,7 +95,7 @@ function Footer() {
         }}
       >
         <h2 style={{ color: 'black', marginBottom: '2px' }}>
-          Relative members:
+          Relevant members:
         </h2>
         <div
           style={{
