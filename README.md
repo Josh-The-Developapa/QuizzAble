@@ -17,7 +17,7 @@ QuizzAble is designed to provide an engaging platform for live quiz contests. Co
 
 QuizzAble has a sibling project called VoteAble, which is also developed by Able Corporation. VoteAble is a separate application focused on managing voting processes.
 
-[Learn more about VoteAble](https://link-to-voteable-readme)
+[Learn more about VoteAble](https://github.com/asiimwemmanuel/VoteAble-v0.git)
 
 ## Directory Structure 📂
 
