@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import QuizzAble from "./assets/Quizzable.png";
-import reactLogo from "./assets/react.svg";
+import QuizzAble from "/Quizzable.png";
+// import reactLogo from "/react.svg";
 
 function App() {
 	const [count, setCount] = useState(0);
@@ -9,13 +9,8 @@ function App() {
 	return (
 		<div className="App">
 			<div>
-				{/* <a href="https://vitejs.dev" target="_blank">
-					<img src="/vite.svg" className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://reactjs.org" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a> */}
 				<h1>Press to answer</h1>
+				{/* add onclick routing magic */}
 				<button>
 					<div>
 						<img
@@ -30,20 +25,11 @@ function App() {
 							}}
 						/>
 					</div>
-				</button>
-
-				{/* <h1>Welcome to QuizzAble</h1>
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
+					<div>count is {count}</div>
 				</button>
 				<p>
-					Edit <code>src/App.jsx</code> and save to test HMR
+					<code>tester nigga</code>
 				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p> */}
 			</div>
 		</div>
 	);

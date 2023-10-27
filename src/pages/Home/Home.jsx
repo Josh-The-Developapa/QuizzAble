@@ -1,25 +1,61 @@
-import { useState } from "react";
-import QuizzAble from "../../assets/Quizzable.png";
-import reactLogo from "../../assets/react.svg";
+import { useEffect, useState } from "react";
+import QuizzAble from "../../../public/Quizzable.png";
 import "./Home.css";
 
 function Home() {
+	const [heading, setHeading] = useState("Click to answer!");
+	const [buttonClicked, setButtonClicked] = useState(false);
+	const [spamMessage, setSpamMessage] = useState("");
+	const [spamClicked, setSpamClicked] = useState(false);
+
+	// TODO: bug that makes the main 10s timer only count from last spam unresolved
+	useEffect(() => {
+		let buttonTimer;
+		let spamTimer;
+
+		if (buttonClicked && spamClicked == false) {
+			setHeading("Answer Saved");
+			buttonTimer = setTimeout(() => {
+				setHeading("Click to answer!");
+				setButtonClicked(false);
+			}, 10000); // Revert after 10 seconds
+		}
+
+		if (spamClicked) {
+			setSpamMessage("Answer already submitted. Please wait.");
+			spamTimer = setTimeout(() => {
+				setSpamMessage("");
+				setSpamClicked(false);
+			}, 3000); // Clear the spam message after 3 seconds
+		}
+
+		return () => {
+			clearTimeout(buttonTimer);
+			clearTimeout(spamTimer);
+		};
+	}, [buttonClicked, spamClicked]);
+
+	const handleClick = () => {
+		if (!buttonClicked) {
+			setButtonClicked(true);
+		} else if (buttonClicked && !spamClicked) {
+			setSpamClicked(true);
+		}
+	};
+
 	return (
-		<div className="App">
+		<div className="App" id="root">
 			<div>
-				{/* <a href="https://vitejs.dev" target="_blank">
-					<img src="/vite.svg" className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://reactjs.org" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a> */}
-				<h1>Click to answer</h1>
-				<button>
+				<h1>Quizzable - Live Contest Quizzing App 🧠🎉</h1>
+				<br />
+				<h1>{heading}</h1>
+				<h2>{spamMessage}</h2> {/* Display spam message here */}
+				<button className="outlined-button" onClick={handleClick}>
 					<div>
 						<img
 							src={QuizzAble}
 							className="logo"
-							alt="React logo"
+							alt="QuizzAble button logo"
 							style={{
 								borderWidth: "200px",
 								height: "200px",
@@ -29,19 +65,6 @@ function Home() {
 						/>
 					</div>
 				</button>
-
-				{/* <h1>Welcome to QuizzAble</h1>
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-				<p>
-					Edit <code>src/App.jsx</code> and save to test HMR
-				</p>
-			</div>
-			<p className="read-the-docs">
-				Click on the Vite and React logos to learn more
-			</p> */}
 			</div>
 		</div>
 	);

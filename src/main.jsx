@@ -8,9 +8,12 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+
+// importing custom source code
 import Home from "./pages/Home/Home";
 import Login from "./pages/Log/Login";
 
+// add a route connected to the button onclick and the subsequent messages that follow
 const router = createBrowserRouter([
 	{
 		path: "/",

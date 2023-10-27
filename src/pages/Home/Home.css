@@ -11,23 +11,9 @@
 	will-change: filter;
 	transition: filter 300ms;
 }
-/* .logo:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-} */
-/* 
-@keyframes logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
 
-@media (prefers-reduced-motion: no-preference) {
-	div:nth-of-type(1) .logo {
-		animation: logo-spin infinite 20s linear;
-	}
+/* .button:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
 } */
 
 .card {
@@ -36,4 +22,9 @@
 
 .read-the-docs {
 	color: #888;
+}
+
+.outlined-button {
+	/* adjust the border width and color as needed */
+	border: 2px solid #871ab9;
 }
