@@ -40,7 +40,7 @@ function Footer() {
         >
           <ul style={{ listStyleType: 'none', padding: 0 }}>
             <li style={{ textAlign: 'left' }}>
-              Joshua Mukisa Kiryowa, IB1 <br /> <b>Chairman, CTO</b>
+              Joshua Mukisa Kiryowa, IB1 <br /> <b>Founder, CTO</b>
             </li>
             <li style={{ textAlign: 'left' }}>
               {/* <br /> */}
@@ -104,7 +104,7 @@ function Footer() {
               <b>CFO</b> <b></b>
             </li>
             <li style={{ textAlign: 'left' }}>
-              Khush Pratik Shah, IB1 <br />
+              <br /> Khush Pratik Shah, IB1 <br />
               <b>CEO, Co-Founder</b>
             </li>
             <li style={{ textAlign: 'left' }}>
