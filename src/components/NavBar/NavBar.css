@@ -1,0 +1,16 @@
+.navbar{
+	position:fixed;
+	z-index: 5;
+	top:0;
+	left:0;
+	background-color: #000000;
+	width:100%;
+	/* height:100px; */
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+    flex-wrap: wrap;
+	align-items: center;
+	padding:10px;
+	margin-bottom: 50px;
+}
