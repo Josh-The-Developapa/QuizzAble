@@ -99,6 +99,11 @@ function Footer() {
         >
           <ul style={{ listStyleType: 'none', padding: 0 }}>
             <li style={{ textAlign: 'left' }}>
+              <br />
+              Akhil Muni, IB1 <br />
+              <b>CFO</b> <b></b>
+            </li>
+            <li style={{ textAlign: 'left' }}>
               Khush Pratik Shah, IB1 <br />
               <b>CEO, Co-Founder</b>
             </li>
@@ -107,10 +112,10 @@ function Footer() {
               Joshua Obia, IB1 <br />
               <b>COO</b> <b></b>
             </li>
-            <li style={{ textAlign: 'left' }}>
+            {/* <li style={{ textAlign: 'left' }}>
               <br />
               Alishaan Bhudwani, IB1 <br /> <b>CFO</b> <b></b>
-            </li>
+            </li> */}
             <li style={{ textAlign: 'left' }}>
               <br />
               Netsanet Mengistie, IB1 <br /> <b>Head of Security</b>
