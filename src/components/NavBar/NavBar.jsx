@@ -1,18 +1,23 @@
 import React from 'react';
 import './NavBar.css';
-// import QuizzAble from '../../assets/Quizzable.png';
+import QuizzAble from '../../assets/Quizzable.png';
 import AbleCorp from '../../assets/Able-Corp.jpeg';
 import { Link, useNavigate } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function NavBar() {
   const navigate = useNavigate();
-  const QuizzAble = 'https://quizzable.onrender.com/public/Quizzable.png';
   return (
     <div className="navbar">
       <Link to="/">
-        <img
+        {/* <img
           src={QuizzAble}
           style={{ height: '125px', objectFit: 'contain' }}
+        /> */}
+        <LazyLoadImage
+          style={{ height: '125px', objectFit: 'contain' }}
+          src={QuizzAble}
+          effect="blur"
         />
       </Link>
       {localStorage.getItem('name') !== null ? (
