@@ -1,11 +1,12 @@
 import React from 'react';
 import './NavBar.css';
-import QuizzAble from '../../assets/Quizzable.png';
+// import QuizzAble from '../../assets/Quizzable.png';
 import AbleCorp from '../../assets/Able-Corp.jpeg';
 import { Link, useNavigate } from 'react-router-dom';
 
 function NavBar() {
   const navigate = useNavigate();
+  const QuizzAble = 'https://quizzable.onrender.com/public/Quizzable.png';
   return (
     <div className="navbar">
       <Link to="/">
