@@ -10,15 +10,15 @@ function NavBar() {
   return (
     <div className="navbar">
       <Link to="/">
-        {/* <img
+        <img
           src={QuizzAble}
           style={{ height: '125px', objectFit: 'contain' }}
-        /> */}
-        <LazyLoadImage
+        />
+        {/* <LazyLoadImage
           style={{ height: '125px', objectFit: 'contain' }}
           src={QuizzAble}
           effect="blur"
-        />
+        /> */}
       </Link>
       {localStorage.getItem('name') !== null ? (
         <button
