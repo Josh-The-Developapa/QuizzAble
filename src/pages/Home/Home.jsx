@@ -8,6 +8,7 @@ function Home() {
 	const [spamMessage, setSpamMessage] = useState("");
 	const [spamClicked, setSpamClicked] = useState(false);
 
+	// messages will change based on the admin from the server end
 	// TODO: bug that makes the main 10s timer only count from last spam unresolved
 	useEffect(() => {
 		let buttonTimer;
