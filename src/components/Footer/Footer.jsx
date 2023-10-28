@@ -108,7 +108,7 @@ function Footer() {
 
             <li style={{ textAlign: 'left' }}>
               <br />
-              Param Desai, IB1 <br /> <b>Assistant CMO</b>
+              Alishaan Bhudwani, IB1 <br /> <b>Assistant CMO</b>
             </li>
           </ul>
         </div>
