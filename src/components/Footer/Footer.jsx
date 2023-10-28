@@ -54,16 +54,11 @@ function Footer() {
               Tahsan Samin, IB1 <br />
               <b>Tech Lead</b>
             </li>
-            <li style={{ textAlign: 'left' }}>
-              <br />
-              Khush Pratik Shah, IB1 <br />
-              <b>CEO, Co-founder</b>
-            </li>
           </ul>
         </div>
       </div>
 
-      {/* <div
+      <div
         style={{
           margin: '20px',
           display: 'flex',
@@ -108,11 +103,16 @@ function Footer() {
 
             <li style={{ textAlign: 'left' }}>
               <br />
-              Param Desai, IB1 <br /> <b>Head of Marketing</b>
+              Harsh Dhedhi, IB1 <br /> <b>CMO</b>
+            </li>
+
+            <li style={{ textAlign: 'left' }}>
+              <br />
+              Param Desai, IB1 <br /> <b>Assistant CMO</b>
             </li>
           </ul>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
