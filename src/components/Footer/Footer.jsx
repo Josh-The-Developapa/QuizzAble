@@ -47,7 +47,12 @@ function Footer() {
             <li style={{ textAlign: 'left' }}>
               <br />
               Emmanuel Asiimwe, IB1 <br />
-              <b>Development Manager, Co-founder</b>
+              <b>Development Manager</b>
+            </li>
+            <li style={{ textAlign: 'left' }}>
+              <br />
+              Tahsan Samin, IB1 <br />
+              <b>Tech Lead</b>
             </li>
             <li style={{ textAlign: 'left' }}>
               <br />
