@@ -21,7 +21,7 @@ function Home() {
           <h2>Welcome to QuizzAble {localStorage.getItem('name')}</h2>
           <div>
             <button style={{ borderRadius: '50px', padding: '30px' }}>
-              <h2>Click Here to answer</h2>
+              <h2 style={{ color: 'white' }}>Click Here to answer</h2>
               <img
                 src={QuizzAble}
                 className="logo"

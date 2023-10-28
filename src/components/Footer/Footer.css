@@ -1,6 +1,6 @@
 .footer{
     position:absolute;
-	bottom:-100%;
+	bottom:-1000px;
 	/* margin-top: 200px; */
 	left:0;
 	background-color: #ffffff;
