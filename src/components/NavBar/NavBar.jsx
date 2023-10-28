@@ -18,10 +18,10 @@ function NavBar() {
         <button
           onClick={() => {
             localStorage.removeItem('name');
-            window.location.reload();
             navigate('/');
+            window.location.reload();
           }}
-          style={{ marginLeft: '20px' }}
+          style={{ marginLeft: '20px', color: 'white' }}
         >
           Logout
         </button>
@@ -30,7 +30,7 @@ function NavBar() {
           onClick={() => {
             navigate('/login');
           }}
-          style={{ marginLeft: '20px' }}
+          style={{ marginLeft: '20px', color: 'white' }}
         >
           Login
         </button>

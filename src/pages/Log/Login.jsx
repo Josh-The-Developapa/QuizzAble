@@ -84,7 +84,11 @@ export default function Login() {
           <button
             // className={'button mt-20'}
             onClick={login}
-            style={{ paddingLeft: '100px', paddingRight: '100px' }}
+            style={{
+              paddingLeft: '100px',
+              paddingRight: '100px',
+              color: 'white',
+            }}
           >
             <p style={{ fontSize: '17px' }}>Login</p>
           </button>
