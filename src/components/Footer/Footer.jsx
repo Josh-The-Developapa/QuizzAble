@@ -45,45 +45,20 @@ function Footer() {
               Joshua Mukisa Kiryowa, IB1 <br /> <b>Chairman, CTO</b>
             </li>
             <li style={{ textAlign: 'left' }}>
-              {/* <br /> */}
               <br />
               Emmanuel Asiimwe, IB1 <br />
-              <b>Development Manager</b>
+              <b>Development Manager, Co-founder</b>
             </li>
             <li style={{ textAlign: 'left' }}>
-              {/* <br /> */}
               <br />
-              Tahsan Samin, IB1 <br />
-              <b>Tech Lead</b>
+              Khush Pratik Shah, IB1 <br />
+              <b>CEO, Co-founder</b>
             </li>
-            {/* <li style={{ textAlign: 'left' }}>
-              Khush Shah - <b>CEO, Co-Founder</b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              Joshua Obia - <b>COO</b> <b></b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              Alishaan - <b>CFO</b> <b></b>
-            </li> */}
-            {/* <li style={{ textAlign: 'left' }}>
-              Netsanet Mengistie - <b>Head of Security</b>
-            </li> */}
           </ul>
-          {/* <li style={{ textAlign: 'left' }}>
-              Khush Shah - <b>CEO, Co-Founder</b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              Joshua Obia - <b>COO</b> <b></b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              Alishaan - <b>CFO</b> <b></b>
-            </li> */}
-          {/* <li style={{ textAlign: 'left' }}>
-              Netsanet Mengistie - <b>Head of Security</b>
-            </li> */}
         </div>
       </div>
-      <div
+
+      {/* <div
         style={{
           margin: '20px',
           display: 'flex',
@@ -120,17 +95,19 @@ function Footer() {
               Joshua Obia, IB1 <br />
               <b>COO</b> <b></b>
             </li>
-            {/* <li style={{ textAlign: 'left' }}>
-              <br />
-              Alishaan Bhudwani, IB1 <br /> <b>CFO</b> <b></b>
-            </li> */}
+
             <li style={{ textAlign: 'left' }}>
               <br />
               Netsanet Mengistie, IB1 <br /> <b>Head of Security</b>
             </li>
+
+            <li style={{ textAlign: 'left' }}>
+              <br />
+              Param Desai, IB1 <br /> <b>Head of Marketing</b>
+            </li>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
