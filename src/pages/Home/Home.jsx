@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import QuizzAble from "../../../public/Quizzable.png";
+import Footer from "../../components/Footer/Footer";
+import NavBar from "../../components/NavBar/NavBar";
 import "./Home.css";
 
 function Home() {
@@ -45,28 +47,41 @@ function Home() {
 	};
 
 	return (
-		<div className="App" id="root">
-			<div>
-				<h1>Quizzable - Live Contest Quizzing App 🧠🎉</h1>
-				<br />
-				<h1>{heading}</h1>
-				<h2>{spamMessage}</h2> {/* Display spam message here */}
-				<button className="outlined-button" onClick={handleClick}>
+		<div>
+			<NavBar />
+			<div className="App" id="root">
+				<div style={{ marginTop: "-10px" }}>
+					{/* {' '} */}
+					<h2>
+						Welcome, {localStorage.getItem("name")}
+						<br />
+						This is Quizzable - Live Contest Quizzing App 🧠🎉
+					</h2>
+					<br />
 					<div>
-						<img
-							src={QuizzAble}
-							className="logo"
-							alt="QuizzAble button logo"
-							style={{
-								borderWidth: "200px",
-								height: "200px",
-								objectFit: "contain",
-								borderRadius: "200px",
-							}}
-						/>
+						<button
+							className="outlined-button"
+							style={{ borderRadius: "50px", padding: "30px" }}
+							onClick={handleClick}
+						>
+							<h1>{heading}</h1>
+							<h2>{spamMessage}</h2>
+							<img
+								src={QuizzAble}
+								className="logo"
+								alt="QuizzAble button logo"
+								style={{
+									borderWidth: "200px",
+									height: "200px",
+									objectFit: "contain",
+									// borderRadius: "200px",
+								}}
+							/>
+						</button>
 					</div>
-				</button>
+				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 }

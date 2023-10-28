@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+.avPic {
+	position: relative;
+	object-fit: contain;
+	top: 15px;
+	height: 80px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.joinOuterContainer {
+	padding-top: 0%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	align-items: center;
+}
+
+.joinInnerContainer {
+	padding-left: 30px;
+	padding-bottom: 20px;
+	padding-right: 20px;
+	min-width: 280px;
+	background-color: #ffffff;
+	border-radius: 20px;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	animation: fadeInAnimation ease 3s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	margin-left:-15px;
+}
+h3 {
+	position: absolute;
+	top: 90%;
+	color: white;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.joinInput {
+	border: 2px solid black;
+	border-radius: 15px;
+	padding: 10px 15px;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.heading {
+	color: black;
+	font-size: 2.5em;
+}
+.ALSU {
+	text-decoration: none;
+	color: #4a00aa;
+}
+
+.fPL {
+	margin: 0;
+	text-decoration: none;
+	color: #4a00aa;
+}
+
+.namep {
+	margin: 0;
+	color: red;
+}
+.passp {
+	margin: 0;
+	color: red;
+}
+.button {
+	cursor: pointer;
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #29006c;
+	padding: 10px;
+	border-radius: 25px;
+	display: inline-block;
+	border: none;
+	width: 100%;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.mt-20 {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.button:focus {
+	outline: 0;
+}
+
+.button:hover {
+	background: #4a00aa;
+}

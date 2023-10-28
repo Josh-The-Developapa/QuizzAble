@@ -6,7 +6,7 @@ import {
 	RouterProvider,
 	createBrowserRouter,
 } from "react-router-dom";
-import App from "./App";
+// import App from "./App";
 import "./index.css";
 
 // importing custom source code
