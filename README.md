@@ -28,10 +28,6 @@ Here's a brief overview of the project structure:
 
 For VoteAble, you'll find a similar directory structure in its dedicated directory.
 
-## License 📜
-
-This project is licensed under [License Name] - see the [LICENSE](LICENSE) file for details.
-
 ## About Able Corporation 🏢
 
 Able Corporation is committed to developing cutting-edge software solutions to meet a variety of needs. QuizzAble and VoteAble are just two examples of our dedication to innovation.
