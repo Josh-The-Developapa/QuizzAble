@@ -22,38 +22,35 @@ function Footer() {
 
 			<div
 				style={{
-					margin: "20px",
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "center",
-					alignItems: "center",
-					flexWrap: "wrap",
-					minWidth: "400px",
+					margin: '20px',
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'center',
+					alignItems: 'center',
+					flexWrap: 'wrap',
+					minWidth: '400px',
 				}}
 			>
-				<h2 style={{ color: "black", marginBottom: "2px" }}>
-					Built by:
-				</h2>
+				<h2 style={{ color: 'black', marginBottom: '2px' }}>Built by:</h2>
 				<div
 					style={{
-						color: "#000000",
-						display: "flex",
-						justifyContent: "flex-start",
-						alignItems: "flex-start",
+						color: '#000000',
+						display: 'flex',
+						justifyContent: 'flex-start',
+						alignItems: 'flex-start',
 					}}
 				>
-					<ul style={{ listStyleType: "none", padding: 0 }}>
-						<li style={{ textAlign: "left" }}>
-							Joshua Mukisa Kiryowa, IB1 <br />{" "}
-							<b>Chairman, CTO</b>
+					<ul style={{ listStyleType: 'none', padding: 0 }}>
+						<li style={{ textAlign: 'left' }}>
+							Joshua Mukisa Kiryowa, IB1 <br /> <b>Chairman, CTO</b>
 						</li>
-						<li style={{ textAlign: "left" }}>
+						<li style={{ textAlign: 'left' }}>
 							{/* <br /> */}
 							<br />
 							Emmanuel Asiimwe, IB1 <br />
 							<b>Development Manager</b>
 						</li>
-						<li style={{ textAlign: "left" }}>
+						<li style={{ textAlign: 'left' }}>
 							{/* <br /> */}
 							<br />
 							Tahsan Samin, IB1 <br />
@@ -88,37 +85,37 @@ function Footer() {
 			</div>
 			<div
 				style={{
-					margin: "20px",
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "center",
-					alignItems: "center",
-					flexWrap: "wrap",
-					minWidth: "400px",
+					margin: '20px',
+					display: 'flex',
+					flexDirection: 'column',
+					justifyContent: 'center',
+					alignItems: 'center',
+					flexWrap: 'wrap',
+					minWidth: '400px',
 				}}
 			>
-				<h2 style={{ color: "black", marginBottom: "2px" }}>
+				<h2 style={{ color: 'black', marginBottom: '2px' }}>
 					Relevant members:
 				</h2>
 				<div
 					style={{
-						color: "#000000",
-						display: "flex",
-						justifyContent: "flex-start",
-						alignItems: "flex-start",
+						color: '#000000',
+						display: 'flex',
+						justifyContent: 'flex-start',
+						alignItems: 'flex-start',
 					}}
 				>
-					<ul style={{ listStyleType: "none", padding: 0 }}>
-						<li style={{ textAlign: "left" }}>
+					<ul style={{ listStyleType: 'none', padding: 0 }}>
+						<li style={{ textAlign: 'left' }}>
 							<br />
 							Akhil Muni, IB1 <br />
 							<b>CFO</b> <b></b>
 						</li>
-						<li style={{ textAlign: "left" }}>
+						<li style={{ textAlign: 'left' }}>
 							<br /> Khush Pratik Shah, IB1 <br />
 							<b>CEO, Co-Founder</b>
 						</li>
-						<li style={{ textAlign: "left" }}>
+						<li style={{ textAlign: 'left' }}>
 							<br />
 							Joshua Obia, IB1 <br />
 							<b>COO</b> <b></b>
@@ -127,10 +124,9 @@ function Footer() {
 							<br />
 							Alishaan Bhudwani, IB1 <br /> <b>CFO</b> <b></b>
 						</li> */}
-						<li style={{ textAlign: "left" }}>
+						<li style={{ textAlign: 'left' }}>
 							<br />
-							Netsanet Mengistie, IB1 <br />{" "}
-							<b>Head of Security</b>
+							Netsanet Mengistie, IB1 <br /> <b>Head of Security</b>
 						</li>
 					</ul>
 				</div>

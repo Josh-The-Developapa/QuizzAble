@@ -1,4 +1,5 @@
 import React from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link, useNavigate } from "react-router-dom";
 import AbleCorp from "../../../public/Able-Corp.jpeg";
 import QuizzAble from "../../../public/Quizzable.png";
@@ -13,6 +14,11 @@ function NavBar() {
 					src={QuizzAble}
 					style={{ height: "125px", objectFit: "contain" }}
 				/>
+				{/* <LazyLoadImage
+					style={{ height: '125px', objectFit: 'contain' }}
+					src={QuizzAble}
+					effect="blur"
+				/> */}
 			</Link>
 			{localStorage.getItem("name") !== null ? (
 				<button
