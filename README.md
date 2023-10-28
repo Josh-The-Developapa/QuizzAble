@@ -25,16 +25,8 @@ Here's a brief overview of the project structure:
 
 - `frontend`: Contains the frontend code for QuizzAble.
 - `backend`: Contains the backend code for QuizzAble.
-- `data`: Stores data files for QuizzAble.
-- `docs`: Documentation for QuizzAble.
-- `tests`: Unit tests for QuizzAble.
-- `config`: Configuration files for QuizzAble.
 
 For VoteAble, you'll find a similar directory structure in its dedicated directory.
-
-## Getting Started 🚦
-
-To get started with QuizzAble, please refer to the documentation in the `docs` directory. It will guide you through installation and usage.
 
 ## License 📜
 
@@ -43,7 +35,5 @@ This project is licensed under [License Name] - see the [LICENSE](LICENSE) file 
 ## About Able Corporation 🏢
 
 Able Corporation is committed to developing cutting-edge software solutions to meet a variety of needs. QuizzAble and VoteAble are just two examples of our dedication to innovation.
-
-For more information about our organization, please visit [Able Corporation](https://link-to-able-corporation-website).
 
 We hope you enjoy using QuizzAble as much as we enjoyed developing it! 🤝
