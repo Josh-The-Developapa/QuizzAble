@@ -2,11 +2,9 @@
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
-
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
 	background-color: #000000;
-
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -24,6 +22,7 @@ a:hover {
 	color: #535bf2;
 }
 
+/* Common Styles for All Devices */
 body {
 	margin: 0;
 	display: flex;
@@ -50,10 +49,29 @@ button {
 	border-color: #646cff;
 }
 
-/* button:hover {
-	border-color: #646cff;
-} */
+/* Mobile Styles */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2em; /* Adjust h1 font size for mobile */
+	}
 
-button:focus, button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
+	button {
+		padding: 0.4em 1em; /* Adjust button padding for mobile */
+	}
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+	h1 {
+		font-size: 2.8em; /* Adjust h1 font size for tablets */
+	}
+
+	button {
+		padding: 0.5em 1.2em; /* Adjust button padding for tablets */
+	}
+}
+
+/* Desktop Styles (Already Defined in the Initial Styles) */
+@media (min-width: 1025px) {
+	/* No need for changes, keep the initial styles */
 }
