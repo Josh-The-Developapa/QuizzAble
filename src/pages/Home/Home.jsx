@@ -61,10 +61,10 @@ function Home() {
 					<div>
 						<button
 							className="outlined-button"
-							style={{ borderRadius: "50px", padding: "30px" }}
+							style={{ borderRadius: "50px", padding: "10px" }}
 							onClick={handleClick}
 						>
-							<h1>{heading}</h1>
+							<h2>{heading}</h2>
 							<h2>{spamMessage}</h2>
 							<img
 								src={QuizzAble}
