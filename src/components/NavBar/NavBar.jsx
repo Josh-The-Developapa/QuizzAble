@@ -1,19 +1,32 @@
-import React from "react";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import React, { useEffect } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link, useNavigate } from "react-router-dom";
-import AbleCorp from "../../../public/Able-Corp.jpeg";
-import QuizzAble from "../../../public/Quizzable.png";
+import AbleCorp from "../../assets/Able-Corp.jpeg";
+import QuizzAble from "../../assets/Quizzable.png";
+// import useRainbow from "../rainbow-button/use-rainbow.hook";
 import "./NavBar.css";
 
 function NavBar() {
 	const navigate = useNavigate();
+	// const colors = useRainbow({ intervalDelay: 1300 }); // Initialize the colors
+
 	return (
-		<div className="navbar">
+		<div
+			className="navbar"
+			// style={colors}
+		>
+			{/* {" "} */}
+			{/* Apply colors to the NavBar div */}
 			<Link to="/">
 				<img
 					src={QuizzAble}
-					style={{ height: "125px", objectFit: "contain" }}
+					style={{
+						height: "125px",
+						objectFit: "contain",
+						borderRadius: "10px", // Adjust the value as needed for your desired roundness
+					}}
 				/>
+
 				{/* <LazyLoadImage
 					style={{ height: '125px', objectFit: 'contain' }}
 					src={QuizzAble}

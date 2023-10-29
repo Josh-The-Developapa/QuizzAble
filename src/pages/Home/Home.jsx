@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import QuizzAble from "../../../public/Quizzable.png";
+import QuizzAble from "../../assets/Quizzable.png";
 import Footer from "../../components/Footer/Footer";
 import NavBar from "../../components/NavBar/NavBar";
 import "./Home.css";
@@ -49,7 +49,7 @@ function Home() {
 	return (
 		<div>
 			<NavBar />
-			<div className="App" id="root">
+			<div className="App" id="root" style={{ marginTop: "100px" }}>
 				<div style={{ marginTop: "-10px" }}>
 					{/* {' '} */}
 					<h2>

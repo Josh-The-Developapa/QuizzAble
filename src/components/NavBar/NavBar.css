@@ -9,8 +9,21 @@
 	display:flex;
 	flex-direction: row;
 	justify-content: flex-start;
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 	align-items: center;
 	padding:10px;
 	margin-bottom: 50px;
+	background-image: linear-gradient(
+		45deg,
+		hsl(300deg 100% 25%) 0%,
+		hsl(296deg 100% 25%) 11%,
+		hsl(292deg 100% 26%) 22%,
+		hsl(287deg 100% 26%) 33%,
+		hsl(283deg 100% 26%) 44%,
+		hsl(278deg 100% 26%) 56%,
+		hsl(272deg 100% 27%) 67%,
+		hsl(265deg 100% 27%) 78%,
+		hsl(257deg 100% 27%) 89%,
+		hsl(240deg 100% 27%) 100%
+	);
 }
