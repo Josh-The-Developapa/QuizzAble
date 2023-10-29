@@ -38,9 +38,34 @@ function Home() {
     };
   }, [buttonClicked, spamClicked]);
 
-  const handleClick = () => {
-    if (!buttonClicked) {
+  const handleClick = async () => {
+    if (
+      !buttonClicked &&
+      localStorage.getItem('name') !== null &&
+      localStorage.getItem('name').trim() !== '' &&
+      localStorage.getItem('code') !== null &&
+      localStorage.getItem('code').trim() !== '' &&
+      (localStorage.getItem('code').trim() == 'senior' ||
+        localStorage.getItem('code').trim() == 'junior')
+    ) {
       setButtonClicked(true);
+
+      const FIREBASE_URL =
+        'https://quizzable-a1610-default-rtdb.firebaseio.com/';
+
+      const data = {
+        team: localStorage.getItem('name'),
+      };
+
+      console.log(data);
+
+      const response = await fetch(`${FIREBASE_URL}/contestants.json`, {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
     } else if (buttonClicked && !spamClicked) {
       setSpamClicked(true);
     }
