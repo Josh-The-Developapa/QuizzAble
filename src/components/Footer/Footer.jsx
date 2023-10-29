@@ -105,33 +105,37 @@ function Footer() {
             alignItems: 'flex-start',
           }}
         >
-          <ul style={{ listStyleType: 'none', padding: 0 }}>
-            <li style={{ textAlign: 'left' }}>
-              <br />
-              Akhil Muni, IB1 <br />
-              <b>CFO</b> <b></b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              <br /> Khush Shah, IB1 <br />
-              <b>CEO, Co-Founder</b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              <br />
-              Joshua Obia, IB1 <br />
-              <b>COO</b> <b></b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              <br />
-              Harsh Dhedhi, IB1 <br /> <b> CMO</b> <b></b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              <br />
-              Alishaan, IB1 <br /> <b>Assistant CMO</b> <b></b>
-            </li>
-            <li style={{ textAlign: 'left' }}>
-              <br />
-              Netsanet Mengistie, IB1 <br /> <b>Head of Security</b>
-            </li>
+          <ul className="rm">
+            <div>
+              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+                <br />
+                Akhil Muni, IB1 <br />
+                <b>CFO</b> <b></b>
+              </li>
+              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+                <br /> Khush Shah, IB1 <br />
+                <b>CEO, Co-Founder</b>
+              </li>
+              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+                <br />
+                Joshua Obia, IB1 <br />
+                <b>COO</b> <b></b>
+              </li>
+            </div>
+            <div>
+              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+                <br />
+                Harsh Dhedhi, IB1 <br /> <b> CMO</b> <b></b>
+              </li>
+              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+                <br />
+                Alishaan, IB1 <br /> <b>Assistant CMO</b> <b></b>
+              </li>
+              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+                <br />
+                Netsanet Mengistie, IB1 <br /> <b>Head of Security</b>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
