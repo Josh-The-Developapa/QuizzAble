@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import AbleCorp from '/src/assets/Able-Corp.jpeg';
+import AbleCorp from '../../images/Able-Corp.jpeg';
 
 function Footer() {
   return (

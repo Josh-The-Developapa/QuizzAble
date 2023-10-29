@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import QuizzAble from '../../assets/Quizzable.png';
+import QuizzAble from '../../images/Quizzable.png';
 // import Context from "../../Context/Context";
 
 import Footer from '../../components/Footer/Footer';

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link, useNavigate } from 'react-router-dom';
-import AbleCorp from '../../assets/Able-Corp.jpeg';
-import QuizzAble from '../../assets/Quizzable.png';
+import AbleCorp from '../../images/Able-Corp.jpeg';
+import QuizzAble from '../../images/Quizzable.png';
 // import useRainbow from "../rainbow-button/use-rainbow.hook";
 import './NavBar.css';
 

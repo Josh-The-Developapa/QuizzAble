@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import QuizzAble from '../../assets/Quizzable.png';
+import QuizzAble from '../../images/Quizzable.png';
 import Footer from '../../components/Footer/Footer';
 import NavBar from '../../components/NavBar/NavBar';
 import './Home.css';
