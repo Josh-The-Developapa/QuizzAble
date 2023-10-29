@@ -61,35 +61,35 @@ function Home() {
       >
         <div style={{ marginTop: '-10px' }}>
           {/* {' '} */}
-          <h2>
-            Welcome, {localStorage.getItem('name')} to
+          <div style={{ marginLeft: '-30px' }}>
+            <h2>
+              Welcome, {localStorage.getItem('name')} to
+              <br />
+              Quizzable - Live Contest Quizzing App 🧠🎉
+            </h2>
             <br />
-            Quizzable - Live Contest Quizzing App 🧠🎉
-          </h2>
-          <br />
-          <div>
-            <button
-              className="outlined-button"
-              style={{
-                borderRadius: '50px',
-                padding: '10px',
-                marginLeft: '0rem',
-                marginRight: '0rem',
-              }}
-              onClick={handleClick}
-            >
-              <h2 style={{ color: 'white' }}>{heading}</h2>
-              <h2 style={{ color: 'white' }}>{spamMessage}</h2>
-              <img
-                src={QuizzAble}
-                className="logo"
-                alt="QuizzAble button logo"
+            <div>
+              <button
+                className="outlined-button"
                 style={{
-                  height: '180px',
-                  objectFit: 'contain',
+                  borderRadius: '50px',
+                  padding: '10px',
                 }}
-              />
-            </button>
+                onClick={handleClick}
+              >
+                <h2 style={{ color: 'white' }}>{heading}</h2>
+                <h2 style={{ color: 'white' }}>{spamMessage}</h2>
+                <img
+                  src={QuizzAble}
+                  className="logo"
+                  alt="QuizzAble button logo"
+                  style={{
+                    height: '180px',
+                    objectFit: 'contain',
+                  }}
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
