@@ -11,7 +11,7 @@ function Home() {
 	const [spamMessage, setSpamMessage] = useState("");
 	const [spamClicked, setSpamClicked] = useState(false);
 	const buzzerSound = new Audio(buzzerAudio); // Create an Audio object for the sound
-		
+
 	// messages will change based on the admin from the server end
 	// TODO: bug that makes the main 10s timer only count from last spam unresolved
 	useEffect(() => {
@@ -27,7 +27,7 @@ function Home() {
 		}
 
 		if (spamClicked) {
-			setSpamMessage("Answer already submitted. Please wait.");
+			setSpamMessage("Button is locked. Please wait.");
 			spamTimer = setTimeout(() => {
 				setSpamMessage("");
 				setSpamClicked(false);
@@ -53,10 +53,25 @@ function Home() {
 			setButtonClicked(true);
 			buzzerSound.play(); // Play the sound here when the button is pressed properly
 
-			const FIREBASE_URL = "https://quizzable-a1610-default-rtdb.firebaseio.com/";
+			const FIREBASE_URL =
+				"https://quizzable-a1610-default-rtdb.firebaseio.com/";
+
+			const currentTime = new Date(Date.now());
+			const hours = currentTime.getHours().toString().padStart(2, "0");
+			const minutes = currentTime
+				.getMinutes()
+				.toString()
+				.padStart(2, "0");
+			const seconds = currentTime
+				.getSeconds()
+				.toString()
+				.padStart(2, "0");
+
+			const formattedTime = `${hours}:${minutes}:${seconds}`;
 
 			const data = {
 				team: localStorage.getItem("name"),
+				time: formattedTime.toString(),
 			};
 
 			console.log(data);
@@ -71,12 +86,21 @@ function Home() {
 		} else if (buttonClicked && !spamClicked) {
 			setSpamClicked(true);
 		}
-	}
+	};
 
 	return (
 		<div>
 			<NavBar />
-			<div className="App" id="root" style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "100px" }}>
+			<div
+				className="App"
+				id="root"
+				style={{
+					display: "flex",
+					justifyContent: "center",
+					alignItems: "center",
+					marginTop: "100px",
+				}}
+			>
 				<div style={{ marginTop: "-10px" }}>
 					<div style={{ marginLeft: "-30px" }}>
 						<h2>
