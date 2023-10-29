@@ -41,46 +41,22 @@ function Footer() {
           }}
         >
           <ul style={{ listStyleType: 'none', padding: 0 }}>
-            <li style={{ textAlign: 'left' }}>
+            <li style={{ textAlign: 'center' }}>
               Joshua Mukisa Kiryowa, IB1 <br /> <b>Chairman, CTO</b>
             </li>
-            <li style={{ textAlign: 'left' }}>
+            <li style={{ textAlign: 'center' }}>
               {/* <br /> */}
               <br />
               Emmanuel Asiimwe, IB1 <br />
               <b>Development Manager</b>
             </li>
-            <li style={{ textAlign: 'left' }}>
+            <li style={{ textAlign: 'center' }}>
               {/* <br /> */}
               <br />
               Tahsan Samin, IB1 <br />
               <b>Tech Lead</b>
             </li>
-            {/* <li style={{ textAlign: 'left' }}>
-							Khush Shah - <b>CEO, Co-Founder</b>
-						</li>
-						<li style={{ textAlign: 'left' }}>
-							Joshua Obia - <b>COO</b> <b></b>
-						</li>
-						<li style={{ textAlign: 'left' }}>
-							Alishaan - <b>CFO</b> <b></b>
-						</li> */}
-            {/* <li style={{ textAlign: 'left' }}>
-							Netsanet Mengistie - <b>Head of Security</b>
-						</li> */}
           </ul>
-          {/* <li style={{ textAlign: 'left' }}>
-							Khush Shah - <b>CEO, Co-Founder</b>
-						</li>
-						<li style={{ textAlign: 'left' }}>
-							Joshua Obia - <b>COO</b> <b></b>
-						</li>
-						<li style={{ textAlign: 'left' }}>
-							Alishaan - <b>CFO</b> <b></b>
-						</li> */}
-          {/* <li style={{ textAlign: 'left' }}>
-							Netsanet Mengistie - <b>Head of Security</b>
-						</li> */}
         </div>
       </div>
       <div
@@ -107,31 +83,31 @@ function Footer() {
         >
           <ul className="rm">
             <div>
-              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+              <li style={{ textAlign: 'center', marginRight: '15px' }}>
                 <br />
                 Akhil Muni, IB1 <br />
                 <b>CFO</b> <b></b>
               </li>
-              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+              <li style={{ textAlign: 'center', marginRight: '15px' }}>
                 <br /> Khush Shah, IB1 <br />
                 <b>CEO, Co-Founder</b>
               </li>
-              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+              <li style={{ textAlign: 'center', marginRight: '15px' }}>
                 <br />
                 Joshua Obia, IB1 <br />
                 <b>COO</b> <b></b>
               </li>
             </div>
             <div>
-              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+              <li style={{ textAlign: 'center', marginRight: '15px' }}>
                 <br />
                 Harsh Dhedhi, IB1 <br /> <b> CMO</b> <b></b>
               </li>
-              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+              <li style={{ textAlign: 'center', marginRight: '15px' }}>
                 <br />
                 Alishaan, IB1 <br /> <b>Assistant CMO</b> <b></b>
               </li>
-              <li style={{ textAlign: 'left', marginRight: '15px' }}>
+              <li style={{ textAlign: 'center', marginRight: '15px' }}>
                 <br />
                 Netsanet Mengistie, IB1 <br /> <b>Head of Security</b>
               </li>

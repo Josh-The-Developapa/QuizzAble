@@ -1,6 +1,6 @@
 .footer{
     position:absolute;
-	bottom:-1100px;
+	bottom:-800px;
 	/* margin-top: 200px; */
 	left:0;
 	background-color: #ffffff;
@@ -27,5 +27,11 @@
 @media screen and (max-width:400px){
 	.rm{
 		flex-direction: column;
+	}
+}
+
+@media screen and (max-width:758px){
+	.footer{
+		bottom:-1400px
 	}
 }
