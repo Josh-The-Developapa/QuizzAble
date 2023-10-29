@@ -25,7 +25,7 @@ function Home() {
     }
 
     if (spamClicked) {
-      setSpamMessage('Answer already submitted. Please wait.');
+      setSpamMessage('Button is locked. Please wait.');
       spamTimer = setTimeout(() => {
         setSpamMessage('');
         setSpamClicked(false);
@@ -53,8 +53,16 @@ function Home() {
       const FIREBASE_URL =
         'https://quizzable-a1610-default-rtdb.firebaseio.com/';
 
+      const currentTime = new Date(Date.now());
+      const hours = currentTime.getHours().toString().padStart(2, '0');
+      const minutes = currentTime.getMinutes().toString().padStart(2, '0');
+      const seconds = currentTime.getSeconds().toString().padStart(2, '0');
+
+      const formattedTime = `${hours}:${minutes}:${seconds}`;
+
       const data = {
         team: localStorage.getItem('name'),
+        time: formattedTime.toString(),
       };
 
       console.log(data);
