@@ -66,8 +66,12 @@ function Home() {
 				.getSeconds()
 				.toString()
 				.padStart(2, "0");
+			const milliseconds = currentTime
+				.getMilliseconds()
+				.toString()
+				.padStart(2, "0");
 
-			const formattedTime = `${hours}:${minutes}:${seconds}`;
+			const formattedTime = `${hours}:${minutes}:${seconds}:${milliseconds}`;
 
 			const data = {
 				team: localStorage.getItem("name"),
