@@ -56,10 +56,14 @@ function Footer() {
               Tahsan Samin, IB1 <br />
               <b>Tech Lead</b>
             </li>
+            <li style={{ textAlign: 'center' }}>
+              <br /> Khush Shah, IB1 <br />
+              <b>CEO, Co-Founder</b>
+            </li>
           </ul>
         </div>
       </div>
-      <div
+      {/* <div
         style={{
           margin: '20px',
           display: 'flex',
@@ -114,7 +118,7 @@ function Footer() {
             </div>
           </ul>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
